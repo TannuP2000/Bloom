@@ -13,7 +13,7 @@ function loadAllSounds() {
   // Load instrument notes from /Sounds/ folder
   // Currently from 8.wav to 15.wav
   for (let i = 8; i <= 15; i++) {
-    let filename = `Sound/${i}.wav`;
+    let filename = `Sound/${i}.mp3`;
     notes.push(
       loadSound(
         filename,
@@ -55,3 +55,4 @@ function playRandomNote() {
   s.setVolume(0.4); // adjust as needed
   s.play();
 }
+
