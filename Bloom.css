@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #fffdd3; /* soft fallback color */
+}
+
+/* p5 canvas fills the window */
+canvas {
+  display: block;
+}
+
+/* (Optional) default font if you ever add HTML text later */
+body {
+  font-family: "Gabriela", serif;
+}
+/* ---------------------------
+   START OVERLAY
+---------------------------- */
+#startOverlay {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background: rgba(255, 245, 230, 20); /* soft neutral veil */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Petit Formal Script", serif;
+  font-size: 32px;
+  color: #C72500;
+  letter-spacing: 1px;
+
+  opacity: 1;
+  transition: opacity 0.8s ease-out;
+
+  z-index: 99999;
+}
